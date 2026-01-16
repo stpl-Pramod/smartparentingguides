@@ -5,12 +5,12 @@ import { Button } from '../components/Button';
 import { Badge } from '../components/Badge';
 import { SEO } from '../components/SEO';
 import familyPhoto from '../../assets/images/familyPhoto.jpg';
-import { 
-  Baby, 
-  Heart, 
-  Users, 
-  Sparkles, 
-  Target, 
+import {
+  Baby,
+  Heart,
+  Users,
+  Sparkles,
+  Target,
   Smile,
   BookOpen,
   Palette,
@@ -52,7 +52,7 @@ export function HomePage() {
       icon: Users,
     },
   ];
-  
+
   const coreValues = [
     {
       title: 'Coordination & Social Skills',
@@ -85,10 +85,10 @@ export function HomePage() {
       icon: Palette,
     },
   ];
-  
+
   return (
     <div className="min-h-screen">
-      <SEO 
+      <SEO
         title="Parenting Tips & Baby Care Guide - Expert Advice for Parents | Smart Parenting Guides"
         description="Comprehensive parenting tips, baby care guides, and kids activities. Expert advice for parents of babies, toddlers, and children. Age-wise guidance from 0-15 years."
         keywords="parenting tips, baby care, kids activities, child development, parenting advice, baby feeding, toddler care, preschool tips, teen parenting, age-wise parenting guide"
@@ -137,7 +137,7 @@ export function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* Age-Wise Cards */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-12">
@@ -148,7 +148,7 @@ export function HomePage() {
             Get personalized guidance, tips, and activities designed specifically for your child's developmental stage
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {ageGroups.map((group, index) => {
             const Icon = group.icon;
@@ -171,7 +171,7 @@ export function HomePage() {
           })}
         </div>
       </section>
-      
+
       {/* Core Values Section */}
       <section className="bg-secondary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -183,7 +183,7 @@ export function HomePage() {
               Essential skills and values to nurture in your child's journey
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coreValues.map((value, index) => {
               const Icon = value.icon;
@@ -204,7 +204,7 @@ export function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* Activities Preview */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -249,7 +249,7 @@ export function HomePage() {
           </div>
         </div>
       </section>
-      
+
       {/* Stories Preview */}
       <section className="bg-gradient-to-br from-lavender/20 to-sky/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -268,28 +268,66 @@ export function HomePage() {
           </div>
         </div>
       </section>
-      
-      {/* Newsletter */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <Card className="bg-gradient-to-br from-primary/10 to-mint/10 border-primary/20">
-          <div className="text-center space-y-6">
-            <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
-              <Mail className="w-8 h-8 text-primary-foreground" />
-            </div>
-            <h2 className="text-3xl font-bold">Stay Connected</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Get weekly tips, activities, and parenting insights delivered to your inbox
+
+      {/* donation */}
+    
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+             
+          <div className="text-center mb-12">
+            <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Support Our Mission</h2>
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">Help us keep parenting resources free.</p>
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+              Your contributions help us hire child development experts and keep our guides accessible to every family, regardless of income.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-6 py-3 rounded-[1.25rem] bg-background border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <Button>Subscribe</Button>
-            </div>
           </div>
-        </Card>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+
+            <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-gray-900">The "Coffee" Shoutout</h3>
+                <p className="mt-4 flex items-baseline text-gray-900">
+                  <span className="text-4xl font-extrabold tracking-tight">$5</span>
+                </p>
+                <p className="mt-6 text-gray-500">Covers the hosting cost for one expert parenting guide for a month.</p>
+              </div>
+              <a href="YOUR_LINK" className="mt-8 block w-full bg-indigo-50 text-indigo-700 font-semibold py-3 px-6 rounded-lg text-center hover:bg-indigo-100 transition">
+                Donate $5
+              </a>
+            </div>
+
+            <div className="relative bg-white border-2 border-indigo-500 rounded-2xl shadow-xl p-8 flex flex-col transform sm:-translate-y-2">
+              <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-indigo-500 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
+                Most Popular
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-gray-900">Research Partner</h3>
+                <p className="mt-4 flex items-baseline text-gray-900">
+                  <span className="text-4xl font-extrabold tracking-tight">$25</span>
+                </p>
+                <p className="mt-6 text-gray-500">Funds a deep-dive interview with a child psychologist for our next guide.</p>
+              </div>
+              <a href="YOUR_LINK" className="mt-8 block w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg text-center hover:bg-indigo-700 transition">
+                Donate $25
+              </a>
+            </div>
+
+            <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-gray-900">Community Hero</h3>
+                <p className="mt-4 flex items-baseline text-gray-900">
+                  <span className="text-4xl font-extrabold tracking-tight">$100</span>
+                </p>
+                <p className="mt-6 text-gray-500">Sponsors a full month of free webinars for parents in low-income areas.</p>
+              </div>
+              <a href="YOUR_LINK" className="mt-8 block w-full bg-indigo-50 text-indigo-700 font-semibold py-3 px-6 rounded-lg text-center hover:bg-indigo-100 transition">
+                Donate $100
+              </a>
+            </div>
+
+          </div>
+
+
       </section>
     </div>
   );
