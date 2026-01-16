@@ -4,6 +4,9 @@ import { Card } from '../components/Card';
 import { Badge } from '../components/Badge';
 import { SEO } from '../components/SEO';
 import { BookOpen, ArrowRight } from 'lucide-react';
+import parentingTipsImage from '../../assets/images/parentingTips.png';
+import activitiesImage from '../../assets/images/activities.png';
+import familyPhotoImage from '../../assets/images/familyPhoto.jpg';
 
 export function StoriesPage() {
   const [selectedAge, setSelectedAge] = useState('all');
@@ -16,7 +19,7 @@ export function StoriesPage() {
       ageValue: '3-5',
       moral: 'Kindness',
       excerpt: 'A heartwarming tale about a bear who learns the joy of sharing with forest friends...',
-      image: 'https://images.unsplash.com/photo-1647621129185-cc09bc212ff1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0b2RkbGVyJTIwbGVhcm5pbmclMjBoYXBweXxlbnwxfHx8fDE3NjY4MzE2OTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: parentingTipsImage,
     },
     {
       id: 'brave-turtle',
@@ -25,7 +28,7 @@ export function StoriesPage() {
       ageValue: '6-10',
       moral: 'Courage',
       excerpt: 'An inspiring story about a turtle who overcomes fear to help her friends...',
-      image: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwYWN0aXZpdGllcyUyMHBsYXl8ZW58MXx8fHwxNzY2ODMxNjkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: activitiesImage,
     },
     {
       id: 'honest-rabbit',
@@ -34,7 +37,7 @@ export function StoriesPage() {
       ageValue: '3-5',
       moral: 'Honesty',
       excerpt: 'A touching story about the importance of telling the truth...',
-      image: 'https://images.unsplash.com/photo-1647616927583-1d44a79a38a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGZhbWlseSUyMGNoaWxkcmVufGVufDF8fHx8MTc2Njc0MDMwNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: familyPhotoImage,
     },
     {
       id: 'helpful-butterfly',
@@ -43,7 +46,7 @@ export function StoriesPage() {
       ageValue: '6-10',
       moral: 'Helping Others',
       excerpt: 'Learn about the power of helping others through this beautiful butterfly story...',
-      image: 'https://images.unsplash.com/photo-1654343532574-53e699fe0cd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMG91dGRvb3IlMjBhY3Rpdml0aWVzfGVufDF8fHx8MTc2NjgzMTY5M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: activitiesImage,
     },
   ];
   
@@ -61,17 +64,19 @@ export function StoriesPage() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Moral Stories for Kids - Inspiring Tales with Life Lessons | ParentCare Hub"
+        title="Moral Stories for Kids - Inspiring Tales with Life Lessons | Smart Parenting Guides"
         description="Read meaningful moral stories for children. Engaging tales with valuable life lessons about kindness, honesty, courage, and more. Age-appropriate stories for kids 3-10 years."
         keywords="moral stories for kids, children stories, bedtime stories, life lessons for kids, values for children, inspirational stories, character building stories"
+        canonicalUrl="https://smartparentingguides.com/stories"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
           name: 'Moral Stories for Children',
           description: 'Collection of inspiring moral stories for kids with life lessons',
+          url: 'https://smartparentingguides.com/stories',
           publisher: {
             '@type': 'Organization',
-            name: 'ParentCare Hub',
+            name: 'Smart Parenting Guides',
           },
         }}
       />

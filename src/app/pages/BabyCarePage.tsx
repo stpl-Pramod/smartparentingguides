@@ -90,17 +90,19 @@ export function BabyCarePage() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Baby Care Essentials (0-2 Years) - Feeding, Sleep, Safety Guide | ParentCare Hub"
+        title="Baby Care Essentials (0-2 Years) - Feeding, Sleep, Safety Guide | Smart Parenting Guides"
         description="Complete baby care guide for 0-2 years. Expert tips on feeding, sleep routines, hygiene, safety, and developmental milestones for your little one."
         keywords="baby care, newborn care, infant feeding, baby sleep routine, baby safety, baby milestones, 0-6 months, 6-12 months, toddler care"
+        canonicalUrl="https://smartparentingguides.com/baby-care"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'Article',
           headline: 'Baby Care Essentials Guide',
           description: 'Comprehensive guide for baby care from 0-2 years',
+          url: 'https://smartparentingguides.com/baby-care',
           author: {
             '@type': 'Organization',
-            name: 'ParentCare Hub',
+            name: 'Smart Parenting Guides',
           },
         }}
       />
@@ -119,7 +121,7 @@ export function BabyCarePage() {
             </div>
             <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1758748101944-e06cb5fca43b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYWJ5JTIwY2FyZSUyMG1vdGhlcnxlbnwxfHx8fDE3NjY4MzE2OTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="../src/assets/images/babycare.png"
                 alt="Baby care"
                 className="w-full h-full object-cover"
               />

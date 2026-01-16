@@ -101,17 +101,19 @@ export function ActivitiesPage() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Kids Activities & Educational Games - Indoor & Outdoor Fun | ParentCare Hub"
+        title="Kids Activities & Educational Games - Indoor & Outdoor Fun | Smart Parenting Guides"
         description="Discover engaging activities for kids of all ages. Indoor crafts, outdoor adventures, learning games, creative arts, and more. Age-appropriate activities from 0-15 years."
         keywords="kids activities, children games, indoor activities, outdoor activities, educational games, creative activities, physical activities, family bonding activities"
+        canonicalUrl="https://smartparentingguides.com/activities"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'Article',
           headline: 'Kids Activities and Educational Games',
           description: 'Comprehensive collection of age-appropriate activities for children',
+          url: 'https://smartparentingguides.com/activities',
           author: {
             '@type': 'Organization',
-            name: 'ParentCare Hub',
+            name: 'Smart Parenting Guides',
           },
         }}
       />
@@ -130,7 +132,7 @@ export function ActivitiesPage() {
             </div>
             <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1654343532574-53e699fe0cd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMG91dGRvb3IlMjBhY3Rpdml0aWVzfGVufDF8fHx8MTc2NjgzMTY5M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="../src/assets/images/activities.png"
                 alt="Children activities"
                 className="w-full h-full object-cover"
               />

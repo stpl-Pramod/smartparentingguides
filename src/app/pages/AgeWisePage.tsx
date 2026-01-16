@@ -127,7 +127,7 @@ ${'-'.repeat(section.length + 10)}
 
 ---
 
-© ${new Date().getFullYear()} ParentCare Hub - Your trusted parenting resource
+© ${new Date().getFullYear()} Smart Parenting Guides - Your trusted parenting resource
     `.trim();
     
     // Create and download the file
@@ -147,6 +147,12 @@ ${'-'.repeat(section.length + 10)}
   if (!ageGroup || !ageGroupData[ageGroup as keyof typeof ageGroupData]) {
     return (
       <div className="min-h-screen">
+        <SEO 
+          title="Age-Wise Parenting Guide - Development Tips by Age Group | Smart Parenting Guides"
+          description="Comprehensive age-wise parenting guides for children 0-15 years. Get specific guidance, tips, and resources tailored to your child's developmental stage."
+          keywords="age-wise parenting, child development by age, parenting guide 0-2 years, preschool parenting, school age parenting, teen parenting, developmental milestones"
+          canonicalUrl="https://smartparentingguides.com/age-wise"
+        />
         <section className="relative bg-gradient-to-br from-peach/20 to-lavender/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center space-y-6">
@@ -191,8 +197,21 @@ ${'-'.repeat(section.length + 10)}
   
   const data = ageGroupData[ageGroup as keyof typeof ageGroupData];
   
+  const ageGroupTitles: Record<string, string> = {
+    '0-2': 'Baby Care Guide (0-2 Years)',
+    '3-5': 'Preschool Parenting Guide (3-5 Years)',
+    '6-10': 'School Age Parenting Guide (6-10 Years)',
+    '11-15': 'Teen Parenting Guide (11-15 Years)',
+  };
+  
   return (
     <div className="min-h-screen">
+      <SEO 
+        title={`${ageGroupTitles[ageGroup]} - Smart Parenting Guides`}
+        description={`Expert parenting guidance for ${ageGroup} years. Comprehensive tips, activities, and resources for ${data.title.toLowerCase()}.`}
+        keywords={`parenting ${ageGroup} years, ${ageGroup} parenting guide, child development ${ageGroup}, parenting tips ${ageGroup}`}
+        canonicalUrl={`https://smartparentingguides.com/age-wise/${ageGroup}`}
+      />
       <section className={`relative bg-gradient-to-br ${data.color}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">{data.title}</h1>

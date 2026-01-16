@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import logoImage from '../../assets/images/logo.png';
 
 export function Footer() {
   return (
@@ -10,10 +11,12 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <Heart className="w-5 h-5 text-primary-foreground fill-current" />
-              </div>
-              <span className="text-xl font-semibold">ParentCare</span>
+              <img 
+                src={logoImage} 
+                alt="Smart Parenting Guides Logo" 
+                className="h-10 w-auto"
+              />
+              <span className="text-xl font-semibold">Smart Parenting Guides</span>
             </div>
             <p className="text-muted-foreground text-sm">
               Empowering parents with age-wise guidance, tips, and activities for every stage of childhood.
@@ -63,7 +66,7 @@ export function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground space-y-3">
-          <p>© {new Date().getFullYear()} ParentCare. Made with love for families everywhere.</p>
+          <p>© {new Date().getFullYear()} Smart Parenting Guides. Made with love for families everywhere.</p>
           <div className="flex items-center justify-center gap-4">
             <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
             <span>|</span>

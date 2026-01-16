@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/Card';
 import { Button } from '../components/Button';
 import { Badge } from '../components/Badge';
 import { SEO } from '../components/SEO';
+import familyPhoto from '../../assets/images/familyPhoto.jpg';
 import { 
   Baby, 
   Heart, 
@@ -88,18 +89,19 @@ export function HomePage() {
   return (
     <div className="min-h-screen">
       <SEO 
-        title="Parenting Tips & Baby Care Guide - Expert Advice for Parents | ParentCare Hub"
+        title="Parenting Tips & Baby Care Guide - Expert Advice for Parents | Smart Parenting Guides"
         description="Comprehensive parenting tips, baby care guides, and kids activities. Expert advice for parents of babies, toddlers, and children. Age-wise guidance from 0-15 years."
         keywords="parenting tips, baby care, kids activities, child development, parenting advice, baby feeding, toddler care, preschool tips, teen parenting, age-wise parenting guide"
+        canonicalUrl="https://smartparentingguides.com"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'WebSite',
-          name: 'ParentCare Hub',
+          name: 'Smart Parenting Guides',
           description: 'Complete parenting guide with age-wise tips, activities, and expert advice',
-          url: typeof window !== 'undefined' ? window.location.origin : '',
+          url: 'https://smartparentingguides.com',
           publisher: {
             '@type': 'Organization',
-            name: 'ParentCare Hub',
+            name: 'Smart Parenting Guides',
           },
         }}
       />
@@ -127,7 +129,7 @@ export function HomePage() {
             </div>
             <div className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1647616927583-1d44a79a38a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGZhbWlseSUyMGNoaWxkcmVufGVufDF8fHx8MTc2Njc0MDMwNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={familyPhoto}
                 alt="Happy family"
                 className="w-full h-full object-cover"
               />
@@ -209,7 +211,7 @@ export function HomePage() {
           <div className="order-2 lg:order-1">
             <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1541692641319-981cc79ee10a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwYWN0aXZpdGllcyUyMHBsYXl8ZW58MXx8fHwxNzY2ODMxNjkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="../src/assets/images/activities.png"
                 alt="Kids activities"
                 className="w-full h-full object-cover"
               />

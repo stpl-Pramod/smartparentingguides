@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from '../components/Card';
 import { Badge } from '../components/Badge';
 import { Button } from '../components/Button';
+import { SEO } from '../components/SEO';
 import { Download, FileText, Calendar, Monitor, CheckSquare } from 'lucide-react';
 
 export function ResourcesPage() {
@@ -38,6 +39,12 @@ export function ResourcesPage() {
   
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Downloadable Parenting Resources - Checklists & Guides | Smart Parenting Guides"
+        description="Free downloadable parenting resources including baby care checklists, developmental milestones charts, activity planners, and screen time guidelines."
+        keywords="parenting resources, downloadable parenting guides, baby care checklist, developmental milestones, activity planner, screen time guidelines, parenting tools"
+        canonicalUrl="https://smartparentingguides.com/resources"
+      />
       <section className="relative bg-gradient-to-br from-cream/30 to-mint/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-3xl mx-auto text-center space-y-6">

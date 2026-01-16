@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Heart, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { cn } from '../utils/cn';
+import logoImage from '../../assets/images/logo.png';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,10 +25,12 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Heart className="w-5 h-5 text-primary-foreground fill-current" />
-            </div>
-            <span className="text-xl font-semibold">ParentCare</span>
+            <img 
+              src={logoImage} 
+              alt="Smart Parenting Guides Logo" 
+              className="h-10 w-auto group-hover:scale-110 transition-transform"
+            />
+            <span className="text-xl font-semibold">Smart Parenting Guides</span>
           </Link>
           
           {/* Desktop Navigation */}

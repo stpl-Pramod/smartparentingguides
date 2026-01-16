@@ -1,10 +1,17 @@
 import React from 'react';
 import { Card } from '../components/Card';
 import { Badge } from '../components/Badge';
+import { SEO } from '../components/SEO';
 
 export function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Privacy Policy - Smart Parenting Guides"
+        description="Your privacy is important to us. Read about how Smart Parenting Guides protects your information and handles your data."
+        keywords="privacy policy, data protection, privacy policy smart parenting guides"
+        canonicalUrl="https://smartparentingguides.com/privacy-policy"
+      />
       <section className="relative bg-gradient-to-br from-peach/20 to-sky/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-3xl mx-auto text-center space-y-6">
@@ -30,7 +37,7 @@ export function PrivacyPolicyPage() {
             <div>
               <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
               <p className="text-muted-foreground leading-relaxed">
-                ParentCare ("we", "us", "our", or "Company") operates the ParentCare website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+                Smart Parenting Guides ("we", "us", "our", or "Company") operates the Smart Parenting Guides website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
               </p>
             </div>
 
@@ -71,7 +78,7 @@ export function PrivacyPolicyPage() {
             <div>
               <h2 className="text-2xl font-bold mb-4">3. Use of Data</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                ParentCare uses the collected data for various purposes:
+                Smart Parenting Guides uses the collected data for various purposes:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-2">
                 <li>To provide and maintain our Service</li>

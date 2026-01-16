@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Card } from '../components/Card';
 import { Badge } from '../components/Badge';
 import { Button } from '../components/Button';
+import { SEO } from '../components/SEO';
 import { ArrowLeft, BookOpen, Heart, Sparkles } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
@@ -30,31 +31,31 @@ const stories: Record<string, Story> = {
     age: '3-5 Years',
     moral: 'Kindness',
     excerpt: 'A heartwarming tale about a bear who learns the joy of sharing with forest friends...',
-    image: 'https://images.unsplash.com/photo-1647621129185-cc09bc212ff1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0b2RkbGVyJTIwbGVhcm5pbmclMjBoYXBweXxlbnwxfHx8fDE3NjY4MzE2OTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: '../src/assets/images/parentingTips.png',
     fullStory: 'Once upon a time, in a beautiful forest filled with tall trees and colorful flowers, there lived a big brown bear named Benny. Benny had a cozy cave full of delicious honey, fresh berries, and sweet nuts.',
     scenes: [
       {
-        image: 'https://images.unsplash.com/photo-1758470475822-673486097ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBhbmltYWxzJTIwZnJpZW5kc3xlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Benny loved his collection of food and would spend all day counting and organizing his treasures. He never shared with anyone, even when his friends asked nicely.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1648345050591-1a74205c9e91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWdpYyUyMGdhcmRlbiUyMG5hdHVyZXxlbnwxfHx8fDE3NjY4MzMwNzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'One cold winter day, the forest was covered in snow. Food became very hard to find. All the animals were hungry and cold, shivering in the freezing weather.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1700048802079-ec47d07f7919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWluYm93JTIwYmlyZHMlMjBjb2xvcmZ1bHxlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Little Ruby the rabbit came to Benny\'s cave with her children. "Please Mr. Bear," she said softly, "my babies are so hungry. Could you spare just a little bit of food?"',
       },
       {
-        image: 'https://images.unsplash.com/photo-1641895958846-19dab3471449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFycnklMjBuaWdodCUyMHNreXxlbnwxfHx8fDE3NjY3ODU0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Benny looked at Ruby\'s sad eyes and her shivering little ones. His heart felt warm and fuzzy. For the first time, he realized how good it would feel to help someone.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1765850258842-af769210194f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMHN0b3J5JTIwaWxsdXN0cmF0aW9ufGVufDF8fHx8MTc2NjgzMzA3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: '"Of course!" said Benny with a big smile. He shared his honey, berries, and nuts with Ruby and all the other forest animals. Everyone was happy and grateful.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1758470475822-673486097ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBhbmltYWxzJTIwZnJpZW5kc3xlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'From that day on, Benny learned that sharing made him happier than keeping everything to himself. He had more friends than ever before, and his heart felt fuller than his cave ever did!',
       },
     ],
@@ -66,31 +67,31 @@ const stories: Record<string, Story> = {
     age: '6-10 Years',
     moral: 'Courage',
     excerpt: 'An inspiring story about a turtle who overcomes fear to help her friends...',
-    image: 'https://images.unsplash.com/photo-1541692641319-981cc79ee10a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwYWN0aXZpdGllcyUyMHBsYXl8ZW58MXx8fHwxNzY2ODMxNjkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: '../src/assets/images/activities.png',
     fullStory: 'In the sparkling blue ocean, there lived a small turtle named Tina. She was the smallest turtle in her family, and she was afraid of many things - dark waters, big waves, and especially sharks.',
     scenes: [
       {
-        image: 'https://images.unsplash.com/photo-1655064879666-878b2bd59afe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMGRvbHBoaW4lMjB1bmRlcndhdGVyfGVufDF8fHx8MTc2NjgzMzA3M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Tina would always hide in her shell whenever something scared her. The other sea creatures would tease her, calling her "Tiny Turtle." This made Tina feel very sad and alone.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1700048802079-ec47d07f7919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWluYm93JTIwYmlyZHMlMjBjb2xvcmZ1bHxlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'One sunny morning, Tina heard a cry for help. A group of baby fish were trapped in a fishing net near the dangerous coral reef where big predators lived.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1641895958846-19dab3471449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFycnklMjBuaWdodCUyMHNreXxlbnwxfHx8fDE3NjY3ODU0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Tina was very scared, but she thought about how the baby fish must feel. Taking a deep breath, she decided to face her fears. "I can do this," she whispered to herself.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1655064879666-878b2bd59afe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMGRvbHBoaW4lMjB1bmRlcndhdGVyfGVufDF8fHx8MTc2NjgzMzA3M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Despite trembling with fear, Tina swam through the dark waters toward the reef. Her heart was beating fast, but she kept going. She used her sharp beak to cut through the net.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1765850258842-af769210194f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMHN0b3J5JTIwaWxsdXN0cmF0aW9ufGVufDF8fHx8MTc2NjgzMzA3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'One by one, the baby fish swam free! They all thanked Tina and swam safely back to their families. All the sea creatures saw what Tina had done and cheered for her bravery.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1758470475822-673486097ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBhbmltYWxzJTIwZnJpZW5kc3xlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'From that day forward, no one called her "Tiny Turtle" anymore. They called her "Brave Tina." She learned that being courageous doesn\'t mean you\'re not afraid - it means doing the right thing even when you are scared.',
       },
     ],
@@ -102,31 +103,31 @@ const stories: Record<string, Story> = {
     age: '3-5 Years',
     moral: 'Honesty',
     excerpt: 'A touching story about the importance of telling the truth...',
-    image: 'https://images.unsplash.com/photo-1647616927583-1d44a79a38a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGZhbWlseSUyMGNoaWxkcmVufGVufDF8fHx8MTc2Njc0MDMwNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: '../src/assets/images/familyPhoto.jpg',
     fullStory: 'In a peaceful meadow surrounded by wildflowers, there lived a little white rabbit named Riley. Riley loved playing with his friends and eating crunchy carrots from the garden.',
     scenes: [
       {
-        image: 'https://images.unsplash.com/photo-1648345050591-1a74205c9e91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWdpYyUyMGdhcmRlbiUyMG5hdHVyZXxlbnwxfHx8fDE3NjY4MzMwNzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'One day, Riley was playing near Farmer Joe\'s carrot patch. The carrots looked so orange and delicious! Even though he knew he shouldn\'t, Riley couldn\'t resist and took three big carrots.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1765583013129-bf75316f755e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXJpb3VzJTIwY2F0JTIwYWR2ZW50dXJlfGVufDF8fHx8MTc2NjgzMzA3Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Later that day, Farmer Joe noticed his carrots were missing. He asked all the animals, "Who took my carrots?" Riley felt his tummy flip-flop with worry.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1641895958846-19dab3471449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFycnklMjBuaWdodCUyMHNreXxlbnwxfHx8fDE3NjY3ODU0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Riley wanted to say "Not me!" but he remembered what his mama always told him: "Telling the truth is always the right thing to do, even when it\'s hard."',
       },
       {
-        image: 'https://images.unsplash.com/photo-1700048802079-ec47d07f7919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWluYm93JTIwYmlyZHMlMjBjb2xvcmZ1bHxlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'With his ears drooping and his voice small, Riley hopped forward. "It was me, Farmer Joe. I took your carrots. I\'m really sorry." A tear rolled down his furry cheek.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1765850258842-af769210194f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMHN0b3J5JTIwaWxsdXN0cmF0aW9ufGVufDF8fHx8MTc2NjgzMzA3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Farmer Joe smiled kindly. "Thank you for being honest, Riley. That took real courage. I\'m not angry - I\'m proud of you for telling the truth." He patted Riley\'s head gently.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1758470475822-673486097ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBhbmltYWxzJTIwZnJpZW5kc3xlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Farmer Joe gave Riley permission to take one carrot each day if he asked first. Riley learned that telling the truth, even when it\'s scary, always feels better than hiding a lie. And he never took anything without asking again!',
       },
     ],
@@ -138,31 +139,31 @@ const stories: Record<string, Story> = {
     age: '6-10 Years',
     moral: 'Helping Others',
     excerpt: 'Learn about the power of helping others through this beautiful butterfly story...',
-    image: 'https://images.unsplash.com/photo-1654343532574-53e699fe0cd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMG91dGRvb3IlMjBhY3Rpdml0aWVzfGVufDF8fHx8MTc2NjgzMTY5M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    image: '../src/assets/images/activities.png',
     fullStory: 'In a beautiful garden filled with roses, daisies, and sunflowers, there lived a butterfly named Bella. She had the most magnificent wings - bright blue with sparkles of gold that shimmered in the sunlight.',
     scenes: [
       {
-        image: 'https://images.unsplash.com/photo-1648345050591-1a74205c9e91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWdpYyUyMGdhcmRlbiUyMG5hdHVyZXxlbnwxfHx8fDE3NjY4MzMwNzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Bella loved flying from flower to flower, helping them by spreading pollen. She would visit each flower and make sure they could grow seeds and create new flowers. It made her very happy.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1700048802079-ec47d07f7919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWluYm93JTIwYmlyZHMlMjBjb2xvcmZ1bHxlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'One day, Bella saw a little bird who had fallen from its nest. The baby bird was chirping sadly, unable to fly back up. Bella knew she was too small to carry the bird, but she wanted to help.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1727804606909-108661bf0736?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmF2ZSUyMGxpb24lMjBjYXJ0b29ufGVufDF8fHx8MTc2NjgzMzA3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Bella flew to find help. She found Leo the Lion resting under a tree. "Please, Mr. Lion, can you help? There\'s a baby bird who needs to get back to its nest!" Leo agreed to help right away.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1758470475822-673486097ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb3Jlc3QlMjBhbmltYWxzJTIwZnJpZW5kc3xlbnwxfHx8fDE3NjY4MzMwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Together, Bella guided Leo to the baby bird. Leo carefully picked up the little bird in his mouth and gently placed it back in the nest high up in the tree. The mother bird sang with joy!',
       },
       {
-        image: 'https://images.unsplash.com/photo-1641895958846-19dab3471449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGFycnklMjBuaWdodCUyMHNreXxlbnwxfHx8fDE3NjY3ODU0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Word spread throughout the garden about Bella\'s kindness. Soon, animals started coming to her whenever they needed help. Bella realized that even small creatures can make a big difference.',
       },
       {
-        image: 'https://images.unsplash.com/photo-1765850258842-af769210194f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMHN0b3J5JTIwaWxsdXN0cmF0aW9ufGVufDF8fHx8MTc2NjgzMzA3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        image: '../src/assets/images/parentingTips.png',
         text: 'Bella continued helping everyone in the garden. She learned that helping others not only made them happy - it filled her own heart with joy too. The garden became a place where everyone helped each other, all because one little butterfly cared.',
       },
     ],
@@ -177,6 +178,11 @@ export function StoryDetailPage() {
   if (!story) {
     return (
       <div className="min-h-screen flex items-center justify-center">
+        <SEO 
+          title="Story Not Found - Smart Parenting Guides"
+          description="The story you're looking for could not be found. Browse our collection of moral stories for children."
+          canonicalUrl="https://smartparentingguides.com/stories"
+        />
         <Card className="max-w-md text-center">
           <BookOpen className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
           <h2 className="text-2xl font-bold mb-2">Story Not Found</h2>
@@ -196,6 +202,12 @@ export function StoryDetailPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-secondary/30 to-white">
+      <SEO 
+        title={`${story.title} - ${story.moral} Story for Kids | Smart Parenting Guides`}
+        description={story.excerpt}
+        keywords={`${story.title}, ${story.moral} story, moral stories for kids, children stories, ${story.age} stories, bedtime stories`}
+        canonicalUrl={`https://smartparentingguides.com/stories/${story.id}`}
+      />
       {/* Header Section */}
       <section className="relative bg-gradient-to-br from-lavender/30 via-peach/20 to-mint/20 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-sky/10 via-transparent to-transparent"></div>

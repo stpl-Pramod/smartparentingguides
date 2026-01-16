@@ -2,11 +2,18 @@ import React from 'react';
 import { Card } from '../components/Card';
 import { Badge } from '../components/Badge';
 import { Button } from '../components/Button';
+import { SEO } from '../components/SEO';
 import { Mail, Send } from 'lucide-react';
 
 export function AboutPage() {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="About Us - Empowering Parents Everywhere | Smart Parenting Guides"
+        description="Learn about Smart Parenting Guides - your trusted partner in the beautiful journey of parenting. We provide comprehensive resources, practical tips, and supportive community for modern parents."
+        keywords="about smart parenting guides, parenting website, parenting resources, parenting community, parenting support"
+        canonicalUrl="https://smartparentingguides.com/about"
+      />
       <section className="relative bg-gradient-to-br from-peach/20 to-sky/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-3xl mx-auto text-center space-y-6">
@@ -26,7 +33,7 @@ export function AboutPage() {
           <div className="space-y-6">
             <h2 className="text-3xl font-bold">Our Mission</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At ParentCare, we believe that every parent deserves access to reliable, age-appropriate guidance for raising happy, healthy children. Our mission is to provide comprehensive resources, practical tips, and supportive community for modern parents navigating the joys and challenges of parenthood.
+              At Smart Parenting Guides, we believe that every parent deserves access to reliable, age-appropriate guidance for raising happy, healthy children. Our mission is to provide comprehensive resources, practical tips, and supportive community for modern parents navigating the joys and challenges of parenthood.
             </p>
           </div>
         </Card>
@@ -70,6 +77,12 @@ export function AboutPage() {
 export function ContactPage() {
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Contact Us - Get In Touch | Smart Parenting Guides"
+        description="Have questions or suggestions? Reach out to Smart Parenting Guides. We'd love to hear from you and help with your parenting journey."
+        keywords="contact smart parenting guides, parenting help, parenting questions, parenting support contact"
+        canonicalUrl="https://smartparentingguides.com/contact"
+      />
       <section className="relative bg-gradient-to-br from-mint/20 to-lavender/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-3xl mx-auto text-center space-y-6">

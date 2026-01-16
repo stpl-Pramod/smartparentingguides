@@ -2,6 +2,7 @@ import React from 'react';
 import * as Accordion from '@radix-ui/react-accordion';
 import { Card } from '../components/Card';
 import { Badge } from '../components/Badge';
+import { SEO } from '../components/SEO';
 import { ChevronDown, Users, Heart, Brain, Target, Smile, BookOpen, Coins, Sparkles, HandHeart } from 'lucide-react';
 import { cn } from '../utils/cn';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
@@ -11,7 +12,7 @@ export function ParentingTipsPage() {
     {
       title: 'Coordination & Social Skills',
       icon: Users,
-      image: 'https://images.unsplash.com/photo-1600792170156-7fdc12ed6733?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBhZ2UlMjBraWRzJTIwYWN0aXZpdGllc3xlbnwxfHx8fDE3NjY4MzI2MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-sky/20 to-blue/10',
       tips: [
         {
@@ -31,7 +32,7 @@ export function ParentingTipsPage() {
     {
       title: 'Friendship & Social Bonding',
       icon: Heart,
-      image: 'https://images.unsplash.com/photo-1764816636596-ff9d84cbee98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXJlbnQlMjBjaGlsZCUyMGJvbmRpbmd8ZW58MXx8fHwxNzY2ODMyNjIyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-rose/20 to-pink/10',
       tips: [
         {
@@ -51,7 +52,7 @@ export function ParentingTipsPage() {
     {
       title: 'Parents as Best Teacher',
       icon: BookOpen,
-      image: 'https://images.unsplash.com/photo-1633219664515-2441564d0cc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVzY2hvb2wlMjBjaGlsZCUyMGxlYXJuaW5nfGVufDF8fHx8MTc2NjgzMjYyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-amber/20 to-orange/10',
       tips: [
         {
@@ -71,7 +72,7 @@ export function ParentingTipsPage() {
     {
       title: 'Caring & Empathy',
       icon: HandHeart,
-      image: 'https://images.unsplash.com/photo-1758598738288-e9bc4386e9c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMGVtb3Rpb25hbCUyMGRldmVsb3BtZW50fGVufDF8fHx8MTc2NjgzMjYyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-peach/20 to-coral/10',
       tips: [
         {
@@ -91,7 +92,7 @@ export function ParentingTipsPage() {
     {
       title: 'Emotional Strength',
       icon: Brain,
-      image: 'https://images.unsplash.com/photo-1761568879596-8c90ce63e668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXdib3JuJTIwYmFieSUyMHBlYWNlZnVsfGVufDF8fHx8MTc2NjgzMjYyNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-purple/20 to-violet/10',
       tips: [
         {
@@ -111,7 +112,7 @@ export function ParentingTipsPage() {
     {
       title: 'Kindness & Compassion',
       icon: Smile,
-      image: 'https://images.unsplash.com/photo-1684971563761-d79338293b5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0b2RkbGVyJTIwcGxheWluZyUyMGhhcHB5fGVufDF8fHx8MTc2NjgzMjYyNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-mint/20 to-emerald/10',
       tips: [
         {
@@ -131,7 +132,7 @@ export function ParentingTipsPage() {
     {
       title: 'Saving Habits',
       icon: Coins,
-      image: 'https://images.unsplash.com/photo-1614350839085-fc1a5c03daf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWRzJTIwaGVhbHRoeSUyMGxpZmVzdHlsZXxlbnwxfHx8fDE3NjY4MzI2MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-teal/20 to-cyan/10',
       tips: [
         {
@@ -151,7 +152,7 @@ export function ParentingTipsPage() {
     {
       title: 'Respect for Elders',
       icon: Sparkles,
-      image: 'https://images.unsplash.com/photo-1578496780896-7081cc23c111?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjBtZWFsdGltZSUyMHRvZ2V0aGVyfGVufDF8fHx8MTc2NjgzMjYyN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-indigo/20 to-blue/10',
       tips: [
         {
@@ -171,7 +172,7 @@ export function ParentingTipsPage() {
     {
       title: 'Self-Help & Independence',
       icon: Target,
-      image: 'https://images.unsplash.com/photo-1633219664515-2441564d0cc4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVzY2hvb2wlMjBjaGlsZCUyMGxlYXJuaW5nfGVufDF8fHx8MTc2NjgzMjYyOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../src/assets/images/parentingTips.png',
       gradient: 'from-lavender/20 to-purple/10',
       tips: [
         {
@@ -192,6 +193,12 @@ export function ParentingTipsPage() {
   
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Parenting Tips & Expert Advice - Age-Wise Guidance | Smart Parenting Guides"
+        description="Expert parenting tips and advice for all ages. Learn about coordination, social skills, friendship, kindness, independence, respect, and creative expression. Age-specific guidance from 0-15 years."
+        keywords="parenting tips, expert parenting advice, child development tips, social skills for kids, friendship building, kindness teaching, independence in children, parenting guidance"
+        canonicalUrl="https://smartparentingguides.com/parenting-tips"
+      />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-sky/20 via-peach/10 to-lavender/20 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-mint/10 via-transparent to-transparent"></div>
