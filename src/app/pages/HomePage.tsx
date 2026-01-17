@@ -316,7 +316,7 @@ export function HomePage() {
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">Community Hero</h3>
                 <p className="mt-4 flex items-baseline text-gray-900">
-                  <span className="text-4xl font-extrabold tracking-tight">$100</span>
+                  <span className="text-4xl font-extrabold tracking-tight">$120</span>
                 </p>
                 <p className="mt-6 text-gray-500">Sponsors a full month of free webinars for parents in low-income areas.</p>
               </div>
