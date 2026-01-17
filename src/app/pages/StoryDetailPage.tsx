@@ -103,7 +103,7 @@ const stories: Record<string, Story> = {
     age: '3-5 Years',
     moral: 'Honesty',
     excerpt: 'A touching story about the importance of telling the truth...',
-    image: '../src/assets/images/familyPhoto.jpg',
+    image: '../src/assets/images/familyPhoto.png',
     fullStory: 'In a peaceful meadow surrounded by wildflowers, there lived a little white rabbit named Riley. Riley loved playing with his friends and eating crunchy carrots from the garden.',
     scenes: [
       {

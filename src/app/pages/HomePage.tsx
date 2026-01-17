@@ -5,7 +5,7 @@ import { Button } from '../components/Button';
 import { Badge } from '../components/Badge';
 import Rozarpay from '../components/Rozarpay';
 import { SEO } from '../components/SEO';
-import familyPhoto from '../../assets/images/familyPhoto.jpg';
+import familyPhoto from '../../assets/images/familyPhoto.png';
 import {
   Baby,
   Heart,

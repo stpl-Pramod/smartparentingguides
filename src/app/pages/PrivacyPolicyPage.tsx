@@ -103,7 +103,7 @@ export function PrivacyPolicyPage() {
             <div>
               <h2 className="text-2xl font-bold mb-4">5. Children's Privacy</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Our Service is not directed to anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you become aware that a child has provided us with personal information, please contact us immediately at hello@parentcare.com. We are committed to complying with the Children's Online Privacy Protection Act (COPPA).
+                Our Service is not directed to anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you become aware that a child has provided us with personal information, please contact us immediately at sevabhav.india@gmail.com. We are committed to complying with the Children's Online Privacy Protection Act (COPPA).
               </p>
             </div>
 
@@ -129,7 +129,7 @@ export function PrivacyPolicyPage() {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Access and Correction</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    You have the right to access, update, or delete your personal information. To exercise these rights, please contact us at hello@parentcare.com.
+                    You have the right to access, update, or delete your personal information. To exercise these rights, please contact us at sevabhav.india@gmail.com.
                   </p>
                 </div>
 
@@ -165,9 +165,9 @@ export function PrivacyPolicyPage() {
                 If you have any questions about this Privacy Policy or our privacy practices, please contact us at:
               </p>
               <div className="space-y-2 text-muted-foreground">
-                <p><strong>Email:</strong> hello@parentcare.com</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Address:</strong> San Francisco, CA</p>
+                <p><strong>Email:</strong> sevabhav.india@gmail.com</p>
+                <p><strong>Phone:</strong> -</p>
+                <p><strong>Address:</strong> India</p>
               </div>
             </div>
           </div>

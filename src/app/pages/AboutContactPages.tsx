@@ -134,7 +134,7 @@ export function ContactPage() {
         <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-2 text-muted-foreground">
             <Mail className="w-5 h-5" />
-            <span>Or email us at: hello@parentcare.com</span>
+            <span>Or email us at: sevabhav.india@gmail.com</span>
           </div>
         </div>
       </section>

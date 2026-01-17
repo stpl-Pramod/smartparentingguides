@@ -6,7 +6,7 @@ import { SEO } from '../components/SEO';
 import { BookOpen, ArrowRight } from 'lucide-react';
 import parentingTipsImage from '../../assets/images/parentingTips.png';
 import activitiesImage from '../../assets/images/activities.png';
-import familyPhotoImage from '../../assets/images/familyPhoto.jpg';
+import familyPhotoImage from '../../assets/images/familyPhoto.png';
 
 export function StoriesPage() {
   const [selectedAge, setSelectedAge] = useState('all');
