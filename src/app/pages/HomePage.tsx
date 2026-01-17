@@ -263,7 +263,7 @@ export function HomePage() {
           </div>
           <div className="text-center">
             <Button size="lg" variant="outline" asChild>
-              <Link to="/stories">Read Stories...</Link>
+              <Link to="/stories">Read Stories</Link>
             </Button>
           </div>
         </div>
