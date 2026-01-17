@@ -6,13 +6,14 @@ import { SEO } from '../components/SEO';
 import { ChevronDown, Users, Heart, Brain, Target, Smile, BookOpen, Coins, Sparkles, HandHeart } from 'lucide-react';
 import { cn } from '../utils/cn';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import parentingTips from '../../assets/images/parentingTips.png';
 
 export function ParentingTipsPage() {
   const topics = [
     {
       title: 'Coordination & Social Skills',
       icon: Users,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-sky/20 to-blue/10',
       tips: [
         {
@@ -32,7 +33,7 @@ export function ParentingTipsPage() {
     {
       title: 'Friendship & Social Bonding',
       icon: Heart,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-rose/20 to-pink/10',
       tips: [
         {
@@ -52,7 +53,7 @@ export function ParentingTipsPage() {
     {
       title: 'Parents as Best Teacher',
       icon: BookOpen,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-amber/20 to-orange/10',
       tips: [
         {
@@ -72,7 +73,7 @@ export function ParentingTipsPage() {
     {
       title: 'Caring & Empathy',
       icon: HandHeart,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-peach/20 to-coral/10',
       tips: [
         {
@@ -92,7 +93,7 @@ export function ParentingTipsPage() {
     {
       title: 'Emotional Strength',
       icon: Brain,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-purple/20 to-violet/10',
       tips: [
         {
@@ -112,7 +113,7 @@ export function ParentingTipsPage() {
     {
       title: 'Kindness & Compassion',
       icon: Smile,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-mint/20 to-emerald/10',
       tips: [
         {
@@ -132,7 +133,7 @@ export function ParentingTipsPage() {
     {
       title: 'Saving Habits',
       icon: Coins,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-teal/20 to-cyan/10',
       tips: [
         {
@@ -152,7 +153,7 @@ export function ParentingTipsPage() {
     {
       title: 'Respect for Elders',
       icon: Sparkles,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-indigo/20 to-blue/10',
       tips: [
         {
@@ -172,7 +173,7 @@ export function ParentingTipsPage() {
     {
       title: 'Self-Help & Independence',
       icon: Target,
-      image: '../src/assets/images/parentingTips.png',
+      image: parentingTips,
       gradient: 'from-lavender/20 to-purple/10',
       tips: [
         {

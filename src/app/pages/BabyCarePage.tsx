@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/Card';
 import { Badge } from '../components/Badge';
 import { SEO } from '../components/SEO';
+import babycareImage from '../../assets/images/babycare.png';
 import { 
   Milk, 
   Moon, 
@@ -121,7 +122,7 @@ export function BabyCarePage() {
             </div>
             <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
               <img
-                src="../src/assets/images/babycare.png"
+                src={babycareImage}
                 alt="Baby care"
                 className="w-full h-full object-cover"
               />

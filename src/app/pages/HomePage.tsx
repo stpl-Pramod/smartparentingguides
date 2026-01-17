@@ -6,6 +6,7 @@ import { Badge } from '../components/Badge';
 import Rozarpay from '../components/Rozarpay';
 import { SEO } from '../components/SEO';
 import familyPhoto from '../../assets/images/familyPhoto.png';
+import activitiesImage from '../../assets/images/activities.png';
 import {
   Baby,
   Heart,
@@ -212,7 +213,7 @@ export function HomePage() {
           <div className="order-2 lg:order-1">
             <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
               <img
-                src="../src/assets/images/activities.png"
+                src={activitiesImage}
                 alt="Kids activities"
                 className="w-full h-full object-cover"
               />
