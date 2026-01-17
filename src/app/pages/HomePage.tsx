@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/Card';
 import { Button } from '../components/Button';
 import { Badge } from '../components/Badge';
+import Rozarpay from '../components/Rozarpay';
 import { SEO } from '../components/SEO';
 import familyPhoto from '../../assets/images/familyPhoto.jpg';
 import {
@@ -274,56 +275,16 @@ export function HomePage() {
    
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
              
-          <div className="text-center mb-12">
-            <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Support Our Mission</h2>
+          <div className="text-center">
+            <h2 className="text-base font-semibold text-gray-600 tracking-wide uppercase">Support Our Mission</h2>
             <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">Help us keep parenting resources free.</p>
-            <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+            <p className="my-4 max-w-2xl text-xl text-gray-500 mx-auto">
               Your contributions help us hire child development experts and keep our guides accessible to every family, regardless of income.
             </p>
+             <Rozarpay />
           </div>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-
-            {/* <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-900">The "Coffee" Shoutout</h3>
-                <p className="mt-4 flex items-baseline text-gray-900">
-                  <span className="text-4xl font-extrabold tracking-tight">$5</span>
-                </p>
-                <p className="mt-6 text-gray-500">Covers the hosting cost for one expert parenting guide for a month.</p>
-              </div>
-              <a href="YOUR_LINK" className="mt-8 block w-full bg-indigo-50 text-indigo-700 font-semibold py-3 px-6 rounded-lg text-center hover:bg-indigo-100 transition">
-                Donate $5
-              </a>
-            </div> */}
-
-            <div className="relative bg-white border-2 border-indigo-500 rounded-2xl shadow-xl p-8 flex flex-col transform sm:-translate-y-2">
-              <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-indigo-500 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
-                Most Popular
-              </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-900">Research Partner</h3>
-                <p className="mt-4 flex items-baseline text-gray-900">
-                  <span className="text-4xl font-extrabold tracking-tight">$25</span>
-                </p>
-                <p className="mt-6 text-gray-500">Funds a deep-dive interview with a child psychologist for our next guide.</p>
-              </div>
-               <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_S4sQIdLlf1GsEE" async> </script> </form>
-
-            </div>
-
-            <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-gray-900">Community Hero</h3>
-                <p className="mt-4 flex items-baseline text-gray-900">
-                  <span className="text-4xl font-extrabold tracking-tight">$120</span>
-                </p>
-                <p className="mt-6 text-gray-500">Sponsors a full month of free webinars for parents in low-income areas.</p>
-              </div>
-              <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_S4sQIdLlf1GsEE" async> </script> </form>
-            </div>
-
-          </div>
+    
 
 
       </section>
