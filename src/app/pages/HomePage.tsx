@@ -312,7 +312,7 @@ export function HomePage() {
 
             </div>
 
-            {/* <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
+            <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">Community Hero</h3>
                 <p className="mt-4 flex items-baseline text-gray-900">
@@ -320,10 +320,8 @@ export function HomePage() {
                 </p>
                 <p className="mt-6 text-gray-500">Sponsors a full month of free webinars for parents in low-income areas.</p>
               </div>
-              <a href="YOUR_LINK" className="mt-8 block w-full bg-indigo-50 text-indigo-700 font-semibold py-3 px-6 rounded-lg text-center hover:bg-indigo-100 transition">
-                Donate $100
-              </a>
-            </div> */}
+              <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_S4sQIdLlf1GsEE" async> </script> </form>
+            </div>
 
           </div>
 
