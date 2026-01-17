@@ -270,7 +270,8 @@ export function HomePage() {
       </section>
 
       {/* donation */}
-    
+        
+   
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
              
           <div className="text-center mb-12">
@@ -283,7 +284,7 @@ export function HomePage() {
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
 
-            <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
+            {/* <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">The "Coffee" Shoutout</h3>
                 <p className="mt-4 flex items-baseline text-gray-900">
@@ -294,7 +295,7 @@ export function HomePage() {
               <a href="YOUR_LINK" className="mt-8 block w-full bg-indigo-50 text-indigo-700 font-semibold py-3 px-6 rounded-lg text-center hover:bg-indigo-100 transition">
                 Donate $5
               </a>
-            </div>
+            </div> */}
 
             <div className="relative bg-white border-2 border-indigo-500 rounded-2xl shadow-xl p-8 flex flex-col transform sm:-translate-y-2">
               <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-indigo-500 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
@@ -307,12 +308,11 @@ export function HomePage() {
                 </p>
                 <p className="mt-6 text-gray-500">Funds a deep-dive interview with a child psychologist for our next guide.</p>
               </div>
-              <a href="YOUR_LINK" className="mt-8 block w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg text-center hover:bg-indigo-700 transition">
-                Donate $25
-              </a>
+               <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_S4sQIdLlf1GsEE" async> </script> </form>
+
             </div>
 
-            <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
+            {/* <div className="relative bg-white border border-gray-200 rounded-2xl shadow-sm p-8 flex flex-col hover:ring-2 hover:ring-indigo-500 transition-all">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">Community Hero</h3>
                 <p className="mt-4 flex items-baseline text-gray-900">
@@ -323,7 +323,7 @@ export function HomePage() {
               <a href="YOUR_LINK" className="mt-8 block w-full bg-indigo-50 text-indigo-700 font-semibold py-3 px-6 rounded-lg text-center hover:bg-indigo-100 transition">
                 Donate $100
               </a>
-            </div>
+            </div> */}
 
           </div>
 
