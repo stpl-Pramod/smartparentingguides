@@ -50,7 +50,7 @@ export default function AffiliateProducts() {
                 href={product.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center justify-center rounded-xl bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2 px-4 transition"
+                className="mt-4 inline-flex items-center justify-center rounded-xl bg-primary hover:bg-yellow-600 text-white font-medium py-2 px-4 transition"
               >
                 Buy on Amazon
               </a>
