@@ -77,7 +77,6 @@ export function AgeWisePage({ ageGroup }: { ageGroup?: string }) {
 
   // Handle subscription and proceed with download
   const handleSubscribe = (email: string) => {
-    console.log('User subscribed with email:', email);
     // Here you would typically send the email to your backend/newsletter service
     
     // Close modal

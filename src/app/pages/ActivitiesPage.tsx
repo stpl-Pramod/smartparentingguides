@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import * as Tabs from '@radix-ui/react-tabs';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/Card';
 import { Badge } from '../components/Badge';
 import { Button } from '../components/Button';
