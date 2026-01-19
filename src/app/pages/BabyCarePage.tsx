@@ -13,6 +13,7 @@ import {
   Baby,
   AlertTriangle
 } from 'lucide-react';
+import AffiliateProducts from './affiliateProducts';
 
 export function BabyCarePage() {
   const [selectedAge, setSelectedAge] = useState('all');
@@ -209,6 +210,7 @@ export function BabyCarePage() {
           </Card>
         </div>
       </section>
+      <AffiliateProducts />
     </div>
   );
 }
