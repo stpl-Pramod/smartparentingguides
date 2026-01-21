@@ -6,28 +6,28 @@ const products = [
     id: 1,
     title: "LuvLap 4 in 1 Convertible Baby High Chair with footrest",
     description: " Convertible to High Chair, Low Chair, & Booster Seat, Essential for Baby Feeding (Green) ",
-    image: "../../assets/products/The White Willow.jpg",
+    image: "src/assets/images/products/LuvLap 4 in 1 Convertible Baby High Chair.jpg",
     link: "https://amzn.to/3LFpeoo",
   },
   {
     id: 2,
     title: "Philips Avent Natural Response Baby Feeding Bottle",
     description: "125Ml Baby Milk Bottle for Newborns and Up, Bpa Free, 0+ Months (Model Scy900/01) ",
-    image: "https://m.media-amazon.com/images/I/616A6zD72SL._SX679_.jpg", 
+    image: "src/assets/images/products/Philips Avent Natural.jpg", 
     link: "https://amzn.to/4qz8uyg",
   },
   {
     id: 3,
     title: "haus & kinder 100% Cotton Muslin Swaddle Wrap for New Born Baby",
     description: "Pack of 5 (100×100 cm) | Baby Blanket & Swaddles for Newborn | Animal Print  ",
-    image: "https://m.media-amazon.com/images/I/71PoD0GSiKL._SX679_.jpg", 
+    image: "src/assets/images/products/haus kinder Cotton Muslin Swaddle.jpg", 
     link: "https://amzn.to/4qAYK6C",
   },
   {
     id: 4,
     title: "The White Willow Premium Baby Mattress For 0 Years & Above",
-    description: "1 Year Warranty-Baby Mattress For New Born-100% Pure Dual Memory Foam Crib Mattress- Baby Cot Mattress-Bassinet-Soft Fabric-48\"L x 24\"W x 4\"H ",
-    image: "https://m.media-amazon.com/images/I/81p-3q+yOiL._SX522_.jpg", 
+    description: "1 Year Warranty-Baby Mattress For New Born-100% Pure Dual Memory Foam Crib Mattress",
+    image: "src/assets/images/products/TheWhiteWillow.jpg", 
     link: "https://amzn.to/49xMKgb",
   },
 ];
@@ -35,7 +35,7 @@ const products = [
 export default function AffiliateProducts() {
   return (
     <section className="py-12 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">
           Recommended Products
         </h2>
@@ -49,7 +49,7 @@ export default function AffiliateProducts() {
               <img
                 src={product.image}
                 alt={product.title}
-                className="w-full h-48 object-contain mb-4"
+                className="w-full h-48 object-cover mb-4"
               />
 
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -64,7 +64,7 @@ export default function AffiliateProducts() {
                 href={product.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center justify-center rounded-xl bg-primary hover:bg-yellow-600 text-white font-medium py-2 px-4 transition"
+                className="mt-4 inline-flex items-center justify-center rounded bg-primary hover:bg-yellow-800 text-white font-medium py-2 px-4 transition"
               >
                 Buy on Amazon
               </a>
