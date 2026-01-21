@@ -6,15 +6,29 @@ const products = [
     id: 1,
     title: "LuvLap 4 in 1 Convertible Baby High Chair with footrest",
     description: " Convertible to High Chair, Low Chair, & Booster Seat, Essential for Baby Feeding (Green) ",
-    image: "https://m.media-amazon.com/images/I/51kJZGKj3rL._SX679_.jpg",
+    image: "../../assets/products/The White Willow.jpg",
     link: "https://amzn.to/3LFpeoo",
   },
   {
-    id: 2    ,
+    id: 2,
     title: "Philips Avent Natural Response Baby Feeding Bottle",
     description: "125Ml Baby Milk Bottle for Newborns and Up, Bpa Free, 0+ Months (Model Scy900/01) ",
     image: "https://m.media-amazon.com/images/I/616A6zD72SL._SX679_.jpg", 
     link: "https://amzn.to/4qz8uyg",
+  },
+  {
+    id: 3,
+    title: "haus & kinder 100% Cotton Muslin Swaddle Wrap for New Born Baby",
+    description: "Pack of 5 (100×100 cm) | Baby Blanket & Swaddles for Newborn | Animal Print  ",
+    image: "https://m.media-amazon.com/images/I/71PoD0GSiKL._SX679_.jpg", 
+    link: "https://amzn.to/4qAYK6C",
+  },
+  {
+    id: 4,
+    title: "The White Willow Premium Baby Mattress For 0 Years & Above",
+    description: "1 Year Warranty-Baby Mattress For New Born-100% Pure Dual Memory Foam Crib Mattress- Baby Cot Mattress-Bassinet-Soft Fabric-48\"L x 24\"W x 4\"H ",
+    image: "https://m.media-amazon.com/images/I/81p-3q+yOiL._SX522_.jpg", 
+    link: "https://amzn.to/49xMKgb",
   },
 ];
 
@@ -26,7 +40,7 @@ export default function AffiliateProducts() {
           Recommended Products
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <div
               key={product.id}
