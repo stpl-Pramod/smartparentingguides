@@ -15,7 +15,7 @@ export function Header() {
     { path: '/age-wise', label: 'Age-Wise Guide' },
     { path: '/activities', label: 'Activities' },
     { path: '/stories', label: 'Stories' },
-    { path: '/resources', label: 'Resources' },
+    // { path: '/resources', label: 'Resources' },
     { path: '/about', label: 'About' },
   ];
   
