@@ -7,15 +7,15 @@ const products = [
     title: "LuvLap 4 in 1 Convertible Baby High Chair with footrest",
     description: " Convertible to High Chair, Low Chair, & Booster Seat, Essential for Baby Feeding (Green) ",
     image: "https://m.media-amazon.com/images/I/51kJZGKj3rL._SX679_.jpg",
-    link: "https://www.amazon.in/gp/aw/d/B079S9JX3S/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=7ec920abbbb9be6873bb579f029d8f24&hsa_cr_id=0&qid=1768846964&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=El4eim5T5W&ref_=sbx_s_sparkle_sbtcd_asin_0_title&pd_rd_w=01CPg&content-id=amzn1.sym.6dfd6df7-44a2-4792-8c83-3ac8a4ba533a%3Aamzn1.sym.6dfd6df7-44a2-4792-8c83-3ac8a4ba533a&pf_rd_p=6dfd6df7-44a2-4792-8c83-3ac8a4ba533a&pf_rd_r=PHREXRFRH0JH7WVW3JMP&pd_rd_wg=7qXvs&pd_rd_r=6748617c-c55c-4c99-9f0f-1dbd7ce49b4c&th=1",
+    link: "https://amzn.to/3LFpeoo",
   },
-//   {
-//     id: 2    ,
-//     title: "Amazon Affiliate Product",
-//     description: "High-quality product available on Amazon. Click below to view details and purchase.",
-//     image: "https://m.media-amazon.com/images/I/61Y30DpqRVL._SL1500_.jpg", // placeholder image
-//     link: "https://www.amazon.in/gp/aw/d/B079S9JX3S/?tag=YOUR_AFFILIATE_TAG",
-//   },
+  {
+    id: 2    ,
+    title: "Philips Avent Natural Response Baby Feeding Bottle",
+    description: "125Ml Baby Milk Bottle for Newborns and Up, Bpa Free, 0+ Months (Model Scy900/01) ",
+    image: "https://m.media-amazon.com/images/I/616A6zD72SL._SX679_.jpg", 
+    link: "https://amzn.to/4qz8uyg",
+  },
 ];
 
 export default function AffiliateProducts() {
