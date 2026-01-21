@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/Card';
 import { Badge } from '../components/Badge';
 import { Button } from '../components/Button';
+import activitiesImage from '../../assets/images/activities.png';
 import { SEO } from '../components/SEO';
 import { 
   Home, 
@@ -131,7 +132,7 @@ export function ActivitiesPage() {
             </div>
             <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
               <img
-                src="../src/assets/images/activities.png"
+                src={activitiesImage}
                 alt="Children activities"
                 className="w-full h-full object-cover"
               />
