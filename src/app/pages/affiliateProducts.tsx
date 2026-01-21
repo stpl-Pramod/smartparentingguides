@@ -1,33 +1,36 @@
 import React from "react";
-
+import product1 from '../../assets/images/products/LuvLap 4 in 1 Convertible Baby High Chair.jpg';
+import product2 from '../../assets/images/products/Philips Avent Natural.jpg';
+import product3 from '../../assets/images/products/haus kinder Cotton Muslin Swaddle.jpg';
+import product4 from '../../assets/images/products/TheWhiteWillow.jpg';
 // You can move this data to a separate file or fetch dynamically later
 const products = [
   {
     id: 1,
     title: "LuvLap 4 in 1 Convertible Baby High Chair with footrest",
     description: " Convertible to High Chair, Low Chair, & Booster Seat, Essential for Baby Feeding (Green) ",
-    image: "src/assets/images/products/LuvLap 4 in 1 Convertible Baby High Chair.jpg",
+    image: product1,
     link: "https://amzn.to/3LFpeoo",
   },
   {
     id: 2,
     title: "Philips Avent Natural Response Baby Feeding Bottle",
     description: "125Ml Baby Milk Bottle for Newborns and Up, Bpa Free, 0+ Months (Model Scy900/01) ",
-    image: "src/assets/images/products/Philips Avent Natural.jpg", 
+    image: product2, 
     link: "https://amzn.to/4qz8uyg",
   },
   {
     id: 3,
     title: "haus & kinder 100% Cotton Muslin Swaddle Wrap for New Born Baby",
     description: "Pack of 5 (100×100 cm) | Baby Blanket & Swaddles for Newborn | Animal Print  ",
-    image: "src/assets/images/products/haus kinder Cotton Muslin Swaddle.jpg", 
+    image: product3, 
     link: "https://amzn.to/4qAYK6C",
   },
   {
     id: 4,
     title: "The White Willow Premium Baby Mattress For 0 Years & Above",
     description: "1 Year Warranty-Baby Mattress For New Born-100% Pure Dual Memory Foam Crib Mattress",
-    image: "src/assets/images/products/TheWhiteWillow.jpg", 
+    image: product4, 
     link: "https://amzn.to/49xMKgb",
   },
 ];
